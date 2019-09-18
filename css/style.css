@@ -10,19 +10,57 @@ html {
 	font-size: 40px;
 }
 
+pre {
+  color: #9da39d;
+}
+
+input{
+  z-index: 1;
+}
+
+input:focus{
+  z-index: -1;
+}
+
 .autocomplete,
 .autocomplete:focus,
 input {
-	outline: 0px solid transparent;
+  display: inline-flex;
+	border: 0px solid transparent;
+  outline: none;
 	background-color: #292d34;
 	margin: 0px;
 	padding: 0px;
 	color: #0398fc;
 	transition: none;
+  box-shadow: none;
+  width: auto;
+}
+
+.dropdown-menu {
+  background: #292d34;
+  filter: brightness(77%);
+  border-radius: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.item {
+  background: #292d34;
+  padding: 0px;
+  color: #9da39d;
+}
+
+li.item:hover{
+  filter: brightness(77%);
 }
 
 li, a{
   color: #9da39d;
+}
+
+li,a:hover{
+  color:#9da39d;
 }
 
 a {
@@ -70,7 +108,7 @@ ul {
 }
 
 .key {
-	color: #b81fff;
+	color: #9f3acf;
 }
 
 .class {

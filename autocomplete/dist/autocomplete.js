@@ -90,7 +90,6 @@ var RequestBundler = function () {
             this.$container = this.$input.parent('.autocomplete');
 
             // dropdown button and dropdown menu
-            this.$container.append('<span class="input-group-btn">' + '<button class="btn btn-default" type="button" tabindex="-1">' + '</button></span>');
             this.$container.append('<ul class="items dropdown-menu" style="display:none;"></ul>');
 
             this.$button = this.$container.find('button');
@@ -258,7 +257,6 @@ var RequestBundler = function () {
                 this.$input[0].addEventListener('blur', this._onBlurHandler);
                 this.$input[0].addEventListener(this.options.filterOn, this._filterOnHandler);
                 this.$input[0].addEventListener(this.options.validateOn, this._validateOnHandler);
-                this.$button[0].addEventListener('click', this._buttonClickHandler);
                 window.addEventListener('keydown', this._globalKeyEventHandler);
             }
         }, {
@@ -337,7 +335,7 @@ var RequestBundler = function () {
 
                 var liElements = dataItems.map(function (x) {
                     var li = document.createElement('li');
-                    li.setAttribute('value', x[_this.options.valueProperty]);
+                    li.setAttribute('class', 'item');
                     li.innerHTML = '<a>' + x[_this.options.nameProperty] + '</a>';
                     li.addEventListener('click', function (e) {
                         _this.$input.val(x[_this.options.nameProperty]);

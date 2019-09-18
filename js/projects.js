@@ -1,16 +1,14 @@
-function spanContent(span) {
-  console.log(span);
-  var innerText = span.innerHTML;
-  console.log(innerText)
-  if(innerText[innerText.length-1] === '\n');
-    innerText = innerText.slice(0,-1);
-  return innerText
+function spanContent(content) {
+  console.log(content);
+  if(content[content.length-1] == '\n');
+    content = content.slice(0,-1);
+  return content
 }
 
 function changeProjectFunc() {
   var projects = ['foldingathome', 'BritBot'];
 
-  projectSpan = document.querySelectorAll('#projectContent');
+  projectSpan = document.getElementById('project').value;
   console.log(projectSpan);
   content = spanContent(projectSpan);
   if (projects.includes(content)) {
@@ -23,8 +21,8 @@ function changeProjectFunc() {
 }
 
 function setup() {
-  content = document.querySelectorAll('#projectContent');
-  content.addEventListener('change', changeProjectFunc());
+  var content = document.getElementById('project');
+  content.addEventListener('keydown', changeProjectFunc());
 }
 
 setup();
