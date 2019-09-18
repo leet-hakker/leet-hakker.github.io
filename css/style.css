@@ -1,0 +1,115 @@
+:root {
+	--background-colour: #292d34;
+}
+
+body,
+html {
+	background-color: var(--background-colour);
+	font-family: "Inconsolata", monospace;
+	color: #9da39d;
+	font-size: 40px;
+}
+
+.autocomplete,
+.autocomplete:focus,
+input {
+	outline: 0px solid transparent;
+	background-color: #292d34;
+	margin: 0px;
+	padding: 0px;
+	color: #0398fc;
+	transition: none;
+}
+
+li, a{
+  color: #9da39d;
+}
+
+a {
+	color: inherit;
+}
+
+a:hover {
+	color: inherit;
+	filter: brightness(77%);
+}
+
+ul {
+  display: block;
+  top: 87px;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+  background: inherit;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+	background: #616469;
+	border-radius: 50px;
+}
+
+.str {
+	color: #90b061;
+}
+
+.var {
+	color: #c16266;
+}
+
+.key {
+	color: #b81fff;
+}
+
+.class {
+	color: #fab44b;
+}
+
+.func {
+	color: #0398fc;
+}
+
+.values {
+	color: #be8a59;
+}
+
+.ibfunc {
+	color: #2dacba;
+}
+
+.comment {
+	color: #616469;
+	font-style: italic;
+}
+
+
+/* Desktop only */
+
+.mobile_device_720 {
+	display: none;
+	font-size: 15px;
+}
+
+
+/* if mobile device width 720px */
+
+@media only screen and (max-device-width: 720px) {
+	.mobile_device_720 {
+		display: inline-block;
+	}
+	.desktop {
+		display: none;
+	}
+}
