@@ -138,6 +138,9 @@ ul {
 .mobile_device_720 {
 	display: none;
 	font-size: 15px;
+	.form-control {
+		font-size: 15px;
+	}
 }
 
 
