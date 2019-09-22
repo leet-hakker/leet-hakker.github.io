@@ -138,9 +138,6 @@ ul {
 .mobile_device_720 {
 	display: none;
 	font-size: 15px;
-	.form-control {
-		font-size: 15px;
-	}
 }
 
 
@@ -149,6 +146,9 @@ ul {
 @media only screen and (max-device-width: 720px) {
 	.mobile_device_720 {
 		display: inline-block;
+	}
+	.form-control {
+		font-size: 15px;
 	}
 	.desktop {
 		display: none;
