@@ -7,11 +7,13 @@ html {
 	background-color: var(--background-colour);
 	font-family: "Inconsolata", monospace;
 	color: #9da39d;
-	font-size: 35px;
+	font-size: 30px;
+	padding:0px;
 }
 
 pre {
   color: #9da39d;
+	padding: 0px;
 }
 
 input{
@@ -34,7 +36,7 @@ input {
 	color: #0398fc;
 	transition: none;
   box-shadow: none;
-  width: auto;
+	max-width: 50%;
 }
 
 .dropdown-menu {
@@ -43,12 +45,14 @@ input {
   border-radius: 0px;
   margin: 0px;
   padding: 0px;
+	z-index: 2;
 }
 
 .item {
   background: #292d34;
   padding: 0px;
   color: #9da39d;
+	z-index: 2;
 }
 
 li.item:hover{
