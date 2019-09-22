@@ -65,6 +65,11 @@ li,a:hover{
 
 a {
 	color: inherit;
+	text-decoration: underline;
+}
+
+#projectExample, #projectCode {
+	text-decoration: none;
 }
 
 a:hover {
