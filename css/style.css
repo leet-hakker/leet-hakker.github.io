@@ -3,12 +3,14 @@
 }
 
 body,
-html {
+html, .desktop {
 	background-color: var(--background-colour);
-	font-family: "Inconsolata", monospace;
+	font-family: 'Fira Mono', monospace;
 	color: #9da39d;
 	font-size: 30px;
-	padding:0px;
+	margin: 0px;
+	padding:10px;
+	height: 100%;
 }
 
 pre {
@@ -39,7 +41,13 @@ input {
 	max-width: 50%;
 }
 
+#project-dropdown {
+	display: none;
+}
+
 .dropdown-menu {
+	display: none;
+	position: fixed;
   background: #292d34;
   filter: brightness(77%);
   border-radius: 0px;
@@ -47,6 +55,12 @@ input {
   padding: 0px;
 	z-index: 2;
 }
+
+.items {
+	display: none;
+}
+
+.show {display:block;}
 
 .item {
   background: #292d34;
@@ -79,11 +93,6 @@ a {
 a:hover {
 	color: inherit;
 	filter: brightness(77%);
-}
-
-ul {
-  display: block;
-  top: 87px;
 }
 
 /* width */

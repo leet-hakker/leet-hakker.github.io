@@ -10,4 +10,13 @@ function changeProjectFunc(content) {
     projectCodeLink.href = `https://github.com/thenamesweretakenalready/${content}`;
     projectCodeLink.style.textDecoration = 'underline'
   }
+  else {
+    projectExampleLink = document.getElementById('projectExample');
+    projectCodeLink = document.getElementById('projectCode');
+
+    projectExampleLink.href = '#';
+    projectExampleLink.style.textDecoration = 'none';
+    projectCodeLink.href = '#';
+    projectCodeLink.style.textDecoration = 'none'
+  }
 }
