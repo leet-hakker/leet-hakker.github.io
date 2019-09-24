@@ -18,6 +18,72 @@ pre {
 	padding: 0px;
 }
 
+@keyframes str-pulse {
+	0%   { border-color: rgba(144, 176, 97, 0); }
+	50%  { border-color: rgba(144, 176, 97, 1); }
+	100% { border-color: rgba(144, 176, 97, 0); }
+}
+
+.str-underline {
+	border-bottom: 2px solid currentColor;
+  display: inline-block;
+  line-height: 0.85;
+	text-shadow:
+    -0.5px -0.5px var(--background-colour),
+    -0.5px 0.5px var(--background-colour),
+    0.5px -0.5px var(--background-colour),
+    0.5px 0.5px var(--background-colour);
+	animation: str-pulse 2s ease infinite;
+}
+
+.str-underline:hover {
+	animation: none;
+}
+
+@keyframes func-pulse {
+	0%   { border-color: rgba(3, 152, 252, 0); }
+	50%  { border-color: rgba(3, 152, 252, 1); }
+	100% { border-color: rgba(3, 152, 252, 0); }
+}
+
+.func-underline {
+	border-bottom: 2px solid currentColor;
+  display: inline-block;
+  line-height: 0.85;
+	text-shadow:
+    -0.5px -0.5px var(--background-colour),
+    -0.5px 0.5px var(--background-colour),
+    0.5px -0.5px var(--background-colour),
+    0.5px 0.5px var(--background-colour);
+	animation: func-pulse 2s ease infinite;
+}
+
+.func-underline:hover {
+	animation: none;
+}
+
+@keyframes var-pulse {
+	0%   { border-color: rgba(193, 98, 102, 0); }
+	50%  { border-color: rgba(193, 98, 102, 1); }
+	100% { border-color: rgba(193, 98, 102, 0); }
+}
+
+.var-underline {
+	border-bottom: 2px solid currentColor;
+  display: inline-block;
+  line-height: 0.85;
+	text-shadow:
+    -0.5px -0.5px var(--background-colour),
+    -0.5px 0.5px var(--background-colour),
+    0.5px -0.5px var(--background-colour),
+    0.5px 0.5px var(--background-colour);
+	animation: var-pulse 2s ease infinite;
+}
+
+.var-underline:hover {
+	animation: none;
+}
+
 input{
   z-index: 1;
 }
@@ -83,7 +149,6 @@ li,a:hover{
 
 a {
 	color: inherit;
-	text-decoration: underline;
 }
 
 #projectExample, #projectCode {
@@ -92,7 +157,7 @@ a {
 
 a:hover {
 	color: inherit;
-	filter: brightness(77%);
+	text-decoration: none;
 }
 
 /* width */
