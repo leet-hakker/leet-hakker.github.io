@@ -1,4 +1,4 @@
 This is a Brave Rewards publisher verification file.
 
 Domain: thenamesweretakenalready.github.io
-Token: 8d7f00ff7cfdca2d4f7a52a402d80c0f9b4425d4fcb136df8f240f5c95df72ad
+Token: 357ed52ef81a5f5dd7ccf7271401477bc9a002ca8187991167c5c50ba4c875c8
